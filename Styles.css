@@ -1,0 +1,396 @@
+/*
+Background: #F2F1E8
+Text: #131511
+Inline Link: #968772
+Inline Link (Hover): #967343
+Navigation Background: #FFFFFF
+Navigation Text: #2B2F26
+Navigation Text (Hover): #CD5D67
+Navigation Text (Active) #968772
+Button Background: #968772
+Button Background (Hover): #967343
+Button Text: #F2F1E8
+Button Text (Hover): #FFFFFF
+Input Border Bottom: #968772
+Input Border Bottom (Focus): #967343
+font-family: 'Roboto', sans-serif;
+font-family: 'Merriweather', sans-serif;
+*/
+
+/*Main*/
+
+#wrapper{
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  font-family: 'Merriweather', serif; color: #131511;
+}
+
+body{
+  background-color: #F2F1E8;
+  margin: 0;
+  padding-top: .8%;
+}
+
+h1{
+  font-size: 28pt;
+  text-align: center;
+  font-weight: lighter;
+}
+
+h2{
+  font-size: 14pt;
+  font-weight: 100;
+  text-align: left;
+  clear: both;
+}
+
+.title-area h2{
+  text-align: center;
+}
+
+h3{
+  font-size: 12pt;
+  font-weight: 100;
+}
+
+p a {
+  color: #968772;
+}
+
+p a:hover{
+  transition-duration: 3s;
+  color: #967343;
+}
+
+p {
+  line-height: 100%;
+}
+
+/*Header/Footer*/
+
+header{
+  height: 40px;
+  background-color: #FFFFFF;
+  z-index: 200;
+  position: fixed;
+  width: 100%;
+  margin-top: -10px;
+  box-shadow: 10px 5px 5px rgba(50,50,50,.2);
+}
+
+#logo:hover{
+  transition-duration: 1s;
+  background:transparent url('images/bent-creek-logo-coral.png') center top no-repeat;
+  background-size: 25px;
+}
+
+.nav-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  color: #131511;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav-button{
+  margin: 12px 30px 0px 30px;
+}
+
+.nav-button a{
+  color: #2B2F26;
+}
+
+.nav-button a:hover{
+  transition-duration: 1s;
+  color: #CD5D67;
+}
+
+#current-page a {
+  color: #968772;
+}
+
+#current-page a:hover {
+  transition-duration: 1s;
+  color: #CD5D67;
+}
+
+footer{
+  height: 30px;
+  background-color: #2B2F26;
+
+}
+
+footer p{
+  font: inherit;
+  color: black;
+  margin-left: 10px;
+  padding-top: 5px;
+}
+
+/*Page Content */
+
+#rows-container{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content:stretch;
+}
+
+#top-row{
+  display:flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0px;
+  height: 350px;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+#bottom-row{
+  display:flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0px;
+  height: 200px;
+  margin-top: -15px;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+#top-row .product-li{
+  background-size: cover;
+  margin: 5px;
+}
+
+#bottom-row .product-li{
+  background-size: cover;
+  margin: 5px;
+}
+
+#product1{
+  flex-grow: 4;
+  background: url(./images/product-1.jpg);
+  background-position: center;
+}
+
+#product2{
+  background: url(./images/product-2.jpg);
+  flex-grow: 1;
+  background-position: center;
+}
+#product3{
+  background: url(./images/product-3.jpg);
+  flex-grow: 1;
+  background-position: center;
+}
+
+#product4{
+  flex-grow: 1;
+  background: url(./images/product-4.jpg);
+  background-position: center;
+}
+#product5{
+  background: url(./images/product-5.jpg);
+  flex-grow: 1;
+  background-position: center;
+}
+#product6{
+  background: url(./images/product-6.jpg);
+  flex-grow: 3;
+  background-position: top;
+}
+
+#product7{
+  background: url(./images/product-7.jpg);
+  flex-grow: 1;
+  background-position: center;
+}
+
+#top-row .content-box{
+  background-color: #2B2F26;
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  position: absolute;
+  margin-top: 250px;
+}
+
+#bottom-row .content-box{
+  background-color: #2B2F26;
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  position: absolute;
+  margin-top: 140px;
+}
+
+
+/* Newsletter */
+
+body[id="newsletter-body"]{
+  background-image: url(./images/background-2.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  background-size: cover;
+
+}
+
+
+input[type="submit"]{
+  background-color: #1fabe5;
+  color: white;
+  font: inherit;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 20px 15px 20px;
+  border-radius: 6px;
+  width: auto;
+  height: auto;
+  border: none;
+}
+
+form{
+
+  background-color: white;
+  width: auto;
+  padding: 10px 40px 10px 40px;
+  z-index: 100;
+  position: absolute;
+
+}
+
+#form-flex-wrapper{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#form-intro-text-container{
+  text-align: center;
+
+}
+
+.input-line{
+border: none;
+border-bottom: 1px solid #968772;
+font-family: 'Merriweather', sans-serif;
+font-size: .7em;
+width: 85%;
+margin: 2%;
+}
+
+.input-line:focus{
+  outline: none;
+  border-bottom: 1px solid #967343;
+}
+
+
+.form-wrapper{
+  width: 80%;
+  margin: 2% 0 2% 10%;
+  border-bottom: 1px solid #968772;
+}
+
+#submit_container{
+  text-align: center;
+}
+
+#signupButton{
+  background-color: #968772;
+  border-radius: 2px;
+  color: #F2F1E8;
+  padding: 2% 4% 2% 4%;
+  margin:2%;
+  font-size: .7em;
+  text-transform: none;
+}
+
+#signupButton:hover{
+  transition-duration: 1s;
+  background-color: #967343;
+  color: #FFFFFF
+}
+
+  /*About*/
+
+.page-break-image{
+  width: 100%;
+  height: 50%;
+  padding: 75px 0px 75px 0px;
+  background-image: url("./images/background-3.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.big-white-text{
+  color: white;
+}
+
+.left-image-w-description{
+  width: 150px;
+  margin: 0px 20px 20px 0px;
+  float: left;
+}
+
+.left-image-w-description p{
+  line-height: 130%;
+}
+
+.left-image-w-description img{
+  width: 150px;
+}
+
+blockquote{
+  clear: both;
+  margin: 0px 0px 0px 0px;
+  padding: 5px 0px 5px 0px;
+  border-left: 1px solid #968772;
+  padding-left: 30px;
+  font-style: italic;
+}
+
+.right-image-w-description{
+  width: 150px;
+  margin: 0px 0px 20px 20px;
+  float: right;
+  text-align: center;
+}
+
+.right-image-w-description p{
+  line-height: 130%;
+}
+
+.right-image-w-description img{
+  width: 150px;
+}
+
+table, thead, th, td{
+  border-collapse: collapse;
+  border: 1px solid #968772;
+  padding: 10px 10px 10px 10px;
+
+}
+
+.body-text-indent-wrapper{
+  padding: 0px 100px 50px 100px;
+}
+
+#row1, #row3{
+  background-color: #F2DFDC;
+}
